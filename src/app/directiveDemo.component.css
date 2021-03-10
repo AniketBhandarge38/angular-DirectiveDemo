@@ -1,0 +1,23 @@
+h1 {
+  color: royalblue;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+.cyan {
+  color: cyan;
+}
+.brown {
+  color: brown;
+}
+.pink {
+  color: rgb(255, 0, 157);
+}
+h3 {
+  color: rgb(10, 19, 100);
+  font-weight: bold;
+  font-style: italic;
+}

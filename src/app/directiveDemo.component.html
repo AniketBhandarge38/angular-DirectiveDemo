@@ -1,0 +1,38 @@
+<div>
+  <h1>Directive Exapmles </h1>
+  <h3>NgStyle and NgClass Demo</h3>
+  <span [class.red]="true">Attribute Change</span><br />
+  <span [ngClass]="{'blue':true}">Attribute Change by Using NgClass</span>
+
+  <br />
+
+  <span [ngStyle]="{'font-size':'14px','color':'green'}">Attribute Change by Using NgStyle</span>
+  <br /><br />
+
+  <span [ngStyle]="{'background-color':'aqua'}">Attribute change by using ngStyle</span>
+  <br/>
+  <span [ngClass]="{'pink':true}">Attribute change by NgCalss</span>
+  <br/><br/>
+  <input type="button" value="Change Color" (click)="changeColor()" />
+  <span [class.cyan]="clr">Attribute Change</span><br />
+
+
+  <span [ngClass]="{'cyan':clr, 'red' : !showColor}">Attribute Change by Using NgClass</span><br />
+
+  <h3>NgIf Demo</h3>
+  <input type="button" value = "{{data}}" (click)="showorhidedata()" >
+
+  <h3 *ngIf="show"><span>Demonstrate of Structural Directives - *ngIf</span></h3>
+
+  <h3>NgFor Demo</h3>
+
+  <p> List of Employees</p>
+
+  <ul>
+    <li *ngFor="let item of employees">
+      {{item}}
+    </li>
+  </ul>
+
+
+</div>
